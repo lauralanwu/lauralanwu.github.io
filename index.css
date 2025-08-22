@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    min-width: 800px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+.agent-id {
+    font-family: monospace;
+}
+
+.background-container {
+    width: 100%;
+}
+
+.background-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
