@@ -13,9 +13,10 @@
     </div>
 
 	<!-- <script type='text/javascript'>
-		function initAgentforceMessaging() {
+		function initEmbeddedMessaging() {
 			try {
 				agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+				agentforce_messaging.settings.devMode = true;
 
 				agentforce_messaging.init(
 					'00DSG00000XOfTf',
@@ -31,19 +32,42 @@
 		};
 	</script>
 
-	<script type='text/javascript' src='https://orgfarm-9d58673e59.my.site-com.z12y3ffbftog1mpcstdf32rwt.wc.crm.dev:6101/ESWCWCmessagingchannel1755631468255/assets/js/init.js' onload='initAgentforceMessaging()'></script> -->
+	<script type='text/javascript' src='https://orgfarm-9d58673e59.my.site-com.z12y3ffbftog1mpcstdf32rwt.wc.crm.dev:6101/ESWCWCmessagingchannel1755631468255/assets/js/init.js' onload='initEmbeddedMessaging()'></script> -->
 
-	<script type='text/javascript'>
+	<!-- <script type='text/javascript'>
 		function initEmbeddedMessaging() {
 			try {
 				agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+				agentforce_messaging.settings.devMode = true;
 	
 				agentforce_messaging.init(
 					'00Dxx003atZ2AH6',
 					'CWC_Slack',
-					'https://orgfarm-9d58673e59.my.site-com.z12y3ffbftog1mpcstdf32rwt.wc.crm.dev:6101/ESWCWCSlack1755876762520:6101',
+					'https://orgfarm-9d58673e59.my.site-com.z12y3ffbftog1mpcstdf32rwt.wc.crm.dev:6101/ESWCWCSlack1755876762520',
 					{
-						scrt2URL: 'http://orgfarm-9d58673e59.my.salesforce-scrt-com.z12y3ffbftog1mpcstdf32rwt.wc.crm.dev:6101'
+						scrt2URL: 'https://orgfarm-0c5a291cea.test1.my.pc-rnd.salesforce-scrt.com'
+					}
+				);
+			} catch (err) {
+				console.error('Error loading Embedded Messaging: ', err);
+			}
+		};
+	</script>
+	<script type='text/javascript' src='https://orgfarm-9d58673e59.my.site-com.z12y3ffbftog1mpcstdf32rwt.wc.crm.dev:6101/ESWCWCSlack1755876762520/assets/js/init.js' onload='initEmbeddedMessaging()'></script> -->
+
+
+	<script type='text/javascript'>
+		function initEmbeddedMessaging() {
+			try {
+				agentforce_messaging.settings.language = 'en'; // For example, enter 'en' or 'en-US'
+				agentforce_messaging.settings.devMode = true;
+
+				agentforce_messaging.init(
+					'00DSB00000QAo9R',
+					'Unauth_4',
+					'https://orgfarm-9d58673e59.my.site-com.z12y3ffbftog1mpcstdf32rwt.wc.crm.dev:6101/ESWCWCSlack1755876762520',
+					{
+						scrt2URL: 'https://orgfarm-0c5a291cea.test1.my.pc-rnd.salesforce-scrt.com'
 					}
 				);
 			} catch (err) {
@@ -52,7 +76,6 @@
 		};
 	</script>
 	<script type='text/javascript' src='https://orgfarm-9d58673e59.my.site-com.z12y3ffbftog1mpcstdf32rwt.wc.crm.dev:6101/ESWCWCSlack1755876762520/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
-	
-	
+
 </body>
 </html>
