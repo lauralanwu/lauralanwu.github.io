@@ -1,0 +1,125 @@
+{
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "✈️ We found *3 flights* from *Pune to Mumbai* ✈️"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"block_id": "flight_01",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*4:55 AM - 10:15 PM   5h 20m . 1stop ⚠️ $198*"
+				}
+			],
+			"accessory": {
+				"type": "image",
+				"image_url": "https://content.airhex.com/content/logos/airlines_IX_100_100_s.png",
+				"alt_text": "Windsor Court Hotel thumbnail"
+			}
+		},
+		{
+			"type": "section",
+			"block_id": "flight_01_detail",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*Air India Express Economy Boeing 737 IX 2650*\n Pune International Airport (PNQ)\n 6:15AM\n\nTravel time: 5h 20m\n\nRajiv Gandhi International Airport (HYD)\n 10:15AM"
+				}
+			],
+			"accessory": {
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"emoji": true,
+					"text": "Book Flight"
+				},
+				"style": "primary",
+				"value": "flight_01"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"block_id": "flight_02",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*1:50 AM - 7:35 AM   5h 45m  Nonstop $310*"
+				}
+			],
+			"accessory": {
+				"type": "image",
+				"image_url": "https://content.airhex.com/content/logos/airlines_AI_100_100_s.png",
+				"alt_text": "Windsor Court Hotel thumbnail"
+			}
+		},
+		{
+			"type": "section",
+			"block_id": "flight_02_detail",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*Air India Economy Airbus A320 neo AI 2608*\nPune International Airport (PNQ)\n 5:55 PM\n\nTravel time: 2h 10m\n\nChhatrapati Shivaji Maharaj International Airport Mumbai (BOM)\n 8:37PM"
+				}
+			],
+			"accessory": {
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"emoji": true,
+					"text": "Book Flight"
+				},
+				"style": "primary",
+				"value": "flight_02"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"block_id": "flight_03",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*1:05 PM - 3:19 PM   2h 14m . nonstop $268*"
+				}
+			],
+			"accessory": {
+				"type": "image",
+				"image_url": "https://content.airhex.com/content/logos/airlines_UA_100_100_s.png",
+				"alt_text": "Windsor Court Hotel thumbnail"
+			}
+		},
+		{
+			"type": "section",
+			"block_id": "flight_03_detail",
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*United Economy Boeing 737 MAX 9 Passenger UA 2041*\nPune International Airport (PNQ)\n 1:05 PM\n\nTravel time: 2h 14m\n\nChhatrapati Shivaji Maharaj International Airport Mumbai (BOM)\n 3:19PM"
+				}
+			],
+			"accessory": {
+				"type": "button",
+				"text": {
+					"type": "plain_text",
+					"emoji": true,
+					"text": "Book Flight"
+				},
+				"style": "primary",
+				"value": "flight_03"
+			}
+		}
+	]
+}

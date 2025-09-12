@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>CWC Demo/SDB6/00DSG00000XdzWr/CWC_Laura_Test</title>
+  <link rel="stylesheet" href="/index.css" />
+</head>
+<body>
+    <div class="background-container">
+        <img src="background.png" alt="Background">
+    </div>
+
+	<script type='text/javascript'>
+		function initAgentforceMessaging() {
+			try {
+				agentforce_messaging.settings.language = 'en'; // For example, enter 'en' or 'en-US'
+				agentforce_messaging.settings.devMode = true;
+
+				agentforce_messaging.init(
+					'00DVW000004THsp',
+					'Food_Options3',
+					'https://test25.test1.my.pc-rnd.site.com/ESWFoodOptions31756421269468',
+					{
+						scrt2URL: 'https://test25.test1.my.pc-rnd.salesforce-scrt.com'
+					}	
+				);
+			} catch (err) {
+				console.error('Error loading Embedded Messaging: ', err);
+			}
+		};
+	</script>
+	<script type='text/javascript' src='https://test25.test1.my.pc-rnd.site.com/ESWFoodOptions31756421269468/assets/js/init.js' onload='initAgentforceMessaging()'></script>
+
+
+</body>
+</html>
