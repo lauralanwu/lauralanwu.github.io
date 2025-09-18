@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>CWC Demo/SDB6/00DSG00000XdzWr/CWC_Laura_Test</title>
+  <link rel="icon" type="image/x-icon" href="/costco/costco.ico" />
   <link rel="stylesheet" href="/index.css" />
 </head>
 <body>
@@ -11,39 +12,18 @@
         <img src="background.png" alt="Background">
     </div>
 
-	<!-- <script type='text/javascript'>
-	function initAgentforceMessaging() {
-		try {
-			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-			agentforce_messaging.settings.devMode = true;
-
-			agentforce_messaging.init(
-				'00DSG00000XdzWr',
-				'CWC_Laura_Test',
-				'https://orgfarm-0272d5dbcb.test1.my.pc-rnd.site.com/ESWCWCLauraTest1755791445049',
-				{
-					scrt2URL: 'https://orgfarm-0272d5dbcb.test1.my.pc-rnd.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-	</script>
-	<script type='text/javascript' src='https://orgfarm-0272d5dbcb.test1.my.pc-rnd.site.com/ESWCWCLauraTest1755791445049/assets/js/init.js' onload='initAgentforceMessaging()'></script> -->
-
 	<script type='text/javascript'>
-		function initAgentforceMessaging() {
+		function initEmbeddedMessaging() {
 			try {
-				agentforce_messaging.settings.language = 'en'; // For example, enter 'en' or 'en-US'
-				agentforce_messaging.settings.devMode = true;
+				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+				embeddedservice_bootstrap.settings.devMode = true;
 
-				agentforce_messaging.init(
-					'00DSB00000QAo9R',
-					'Unauth_4',
-					'https://orgfarm-0272d5dbcb.test1.my.pc-rnd.site.com/ESWCWCLauraTest1755791445049',
+				embeddedservice_bootstrap.init(
+					'00DVW000004eNej',
+					'Food_Options',
+					'https://orgfarm-ff34c91f81.test1.my.pc-rnd.site.com/ESWFoodOptions1756418785698',
 					{
-						scrt2URL: 'https://orgfarm-0c5a291cea.test1.my.pc-rnd.salesforce-scrt.com'
+						scrt2URL: 'https://orgfarm-ff34c91f81.test1.my.pc-rnd.salesforce-scrt.com'
 					}
 				);
 			} catch (err) {
@@ -51,8 +31,7 @@
 			}
 		};
 	</script>
-	<script type='text/javascript' src='https://orgfarm-0272d5dbcb.test1.my.pc-rnd.site.com/ESWCWCLauraTest1755791445049/assets/js/init.js' onload='initAgentforceMessaging()'></script>
-
+	<script type='text/javascript' src='https://orgfarm-ff34c91f81.test1.my.pc-rnd.site.com/ESWFoodOptions1756418785698/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>

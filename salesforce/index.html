@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>CWC demo/SDB6/00DSB00000QAo9R Unauth_4</title>
-  <link rel="icon" type="image/x-icon" href="https://www.salesforce.com/c2/public/app/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/salesforce/favicon.ico" />
   <link rel="stylesheet" href="/index.css" />
 </head>
 <body>
@@ -13,17 +13,17 @@
     </div>
 
 	<script type='text/javascript'>
-		function initAgentforceMessaging() {
+		function initEmbeddedMessaging() {
 			try {
-				agentforce_messaging.settings.language = 'en'; // For example, enter 'en' or 'en-US'
-				agentforce_messaging.settings.devMode = true;
+				embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+				embeddedservice_bootstrap.settings.devMode = true;
 
-				agentforce_messaging.init(
-					'00DSB00000QAo9R',
-					'Unauth_4',
-					'https://orgfarm-0b9845e12f.test1.my.pc-rnd.site.com/ESWcwcsalesforce21755190123625',
+				embeddedservice_bootstrap.init(
+					'00DLT000009Ncfe',
+					'Food_Options',
+					'https://orgfarm-eac56286de.test1.my.pc-rnd.site.com/ESWFoodOptions1756227953103',
 					{
-						scrt2URL: 'https://orgfarm-0c5a291cea.test1.my.pc-rnd.salesforce-scrt.com'
+						scrt2URL: 'https://orgfarm-eac56286de.test1.my.pc-rnd.salesforce-scrt.com'
 					}
 				);
 			} catch (err) {
@@ -31,19 +31,20 @@
 			}
 		};
 	</script>
-	<script type='text/javascript' src='https://orgfarm-0b9845e12f.test1.my.pc-rnd.site.com/ESWcwcsalesforce21755190123625/assets/js/init.js' onload='initAgentforceMessaging()'></script>
+	<script type='text/javascript' src='https://orgfarm-eac56286de.test1.my.pc-rnd.site.com/ESWFoodOptions1756227953103/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
 	<script>
-	window.addEventListener('load', function() {
-		setTimeout(function() {
-			const iframe = document.getElementById('agentforce-messaging-frame');
-			const message = {
-				type: 'changeColor',
-				color: '#066AFE' // --slds-g-color-palette-electric-blue-50
-			};
-			iframe.contentWindow.postMessage(message, '*');
-		}, 500);
-	});
+		window.addEventListener('load', function() {
+			setTimeout(function() {
+				const iframe = document.getElementById('agentforce-messaging-frame');
+				const message = {
+					type: 'changeColor',
+					color: '#066AFE' // --slds-g-color-palette-electric-blue-50
+				};
+				iframe.contentWindow.postMessage(message, '*');
+			}, 500);
+		});
 	</script>
 
 </body>
